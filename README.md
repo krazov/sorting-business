@@ -42,6 +42,12 @@ mergeSortBottomUp : 1945.847ms
 quickSortBasic    : 12597.508ms
 ```
 
+## Credits
+
+All the sorting algorithms were taken from [“Sorting algorithms in JavaScript, all the code”](http://blog.benoitvallon.com/sorting-algorithms-in-javascript/sorting-algorithms-in-javascript-all-the-code/) by [Benoît Vallon](https://twitter.com/benoitvallon) and ES6+’yfied by me.
+
+(To be honest, I sucked at sorting algorithms at school and always had to cheat on exams, in this one particular area. Later, I actually felt cheated by teachers, upon learning that sorting is usually built into languages like C++ or PHP. But years later, as you can see, I decided to return to the subject.)
+
 ## TODO
 
 * Array with repeating numbers
