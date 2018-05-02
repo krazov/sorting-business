@@ -33,4 +33,9 @@ module.exports = {
             .from({ length }, (_, index) => index)
             .reverse();
     },
+
+    generateStale(length) {
+        return Array
+            .from({ length }, () => 1);
+    },
 }

@@ -1,4 +1,9 @@
-const { generateRandom, generateOrdered, generateReversed } = require('./generator');
+const {
+    generateRandom,
+    generateOrdered,
+    generateReversed,
+    generateStale,
+} = require('./generator');
 
 const {
     nativeSort,
@@ -41,14 +46,16 @@ const runTest = (arrays) => ({ name, fn }) => {
     console.timeEnd(name);
 };
 
-const testFn = compose(runTest, generateArray);
+const testerFn = compose(runTest, generateArray);
+
+//const
 
 // random _____________________________________________________________________________________________________________
 console.log('Random array test');
 
 sorters
     .map(fnToObject)
-    .forEach(testFn(generateRandom));
+    .forEach(testerFn(generateRandom));
 
 // ordered ____________________________________________________________________________________________________________
 console.log('');
@@ -56,7 +63,7 @@ console.log('Ordered array test (optimistic)');
 
 sorters
     .map(fnToObject)
-    .forEach(testFn(generateOrdered));
+    .forEach(testerFn(generateOrdered));
 
 // reverse ____________________________________________________________________________________________________________
 console.log('');
@@ -64,4 +71,12 @@ console.log('Reversed array test (pesimistic)');
 
 sorters
     .map(fnToObject)
-    .forEach(testFn(generateReversed));
+    .forEach(testerFn(generateReversed));
+
+// stale ______________________________________________________________________________________________________________
+console.log('');
+console.log('Stale array test (the same value)');
+
+sorters
+    .map(fnToObject)
+    .forEach(testerFn(generateStale));

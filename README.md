@@ -12,34 +12,44 @@ Run `node ./test.js` in console of your chosen flavour while being in repo’s o
 
 ```
 Random array test
-nativeSort        : 334.912ms
-bubbleSort        : 14887.486ms
-selectionSort     : 1129.620ms
-insertionSort     : 3740.700ms
-shellSort         : 147.348ms
-mergeSortTopDown  : 98.120ms
-mergeSortBottomUp : 1862.713ms
-quickSortBasic    : 727.695ms
+nativeSort        : 337.291ms
+bubbleSort        : 16133.071ms
+selectionSort     : 1070.825ms
+insertionSort     : 3607.055ms
+shellSort         : 114.142ms
+mergeSortTopDown  : 100.180ms
+mergeSortBottomUp : 1699.834ms
+quickSortBasic    : 674.931ms
 
 Ordered array test (optimistic)
-nativeSort        : 330.581ms
-bubbleSort        : 40.537ms
-selectionSort     : 1570.100ms
-insertionSort     : 19.364ms
-shellSort         : 40.716ms
-mergeSortTopDown  : 87.172ms
-mergeSortBottomUp : 1689.438ms
-quickSortBasic    : 13956.349ms
+nativeSort        : 291.216ms
+bubbleSort        : 27.814ms
+selectionSort     : 1177.224ms
+insertionSort     : 18.157ms
+shellSort         : 35.576ms
+mergeSortTopDown  : 82.511ms
+mergeSortBottomUp : 1653.728ms
+quickSortBasic    : 13095.760ms
 
 Reversed array test (pesimistic)
-nativeSort        : 351.167ms
-bubbleSort        : 15594.825ms
-selectionSort     : 1151.056ms
-insertionSort     : 7896.931ms
-shellSort         : 46.949ms
-mergeSortTopDown  : 91.082ms
-mergeSortBottomUp : 1945.847ms
-quickSortBasic    : 12597.508ms
+nativeSort        : 310.782ms
+bubbleSort        : 15444.034ms
+selectionSort     : 1165.121ms
+insertionSort     : 8003.294ms
+shellSort         : 43.399ms
+mergeSortTopDown  : 80.866ms
+mergeSortBottomUp : 1636.443ms
+quickSortBasic    : 12351.613ms
+
+Stale array test (the same value)
+nativeSort        : 36.407ms
+bubbleSort        : 25.876ms
+selectionSort     : 1173.548ms
+insertionSort     : 14.039ms
+shellSort         : 32.262ms
+mergeSortTopDown  : 81.303ms
+mergeSortBottomUp : 1684.816ms
+quickSortBasic    : 12534.264ms
 ```
 
 ## Credits
