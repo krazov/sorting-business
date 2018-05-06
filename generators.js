@@ -38,4 +38,11 @@ module.exports = {
         return Array
             .from({ length }, () => 1);
     },
+
+    generateStrings(length) {
+        return Array
+            .from({ length })
+            .reduce(fillVaried, [])
+            .map(String);
+    }
 }
