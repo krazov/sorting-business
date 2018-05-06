@@ -2,7 +2,7 @@
 
 Repo dedicated to testing the speed of different sorting algorithms. Without any plan so far so project does only this and nothing more.
 
-Each test sorts 1000 arrays of 1000 elements in three variants: random (non-repeating) numbers, ordered (optimistic), and reversed (pesimistic).
+Each test sorts 1000 arrays of 1000 elements in three variants: random (non-repeating) numbers, ordered (optimistic), reversed (pesimistic), and random (non-repeating) converted to strings.
 
 ## Running test
 
@@ -12,44 +12,55 @@ Run `node ./test.js` in console of your chosen flavour while being in repo’s o
 
 ```
 Random array test
-nativeSort        : 337.291ms
-bubbleSort        : 16133.071ms
-selectionSort     : 1070.825ms
-insertionSort     : 3607.055ms
-shellSort         : 114.142ms
-mergeSortTopDown  : 100.180ms
-mergeSortBottomUp : 1699.834ms
-quickSortBasic    : 674.931ms
+nativeSort        : 373.518ms
+bubbleSort        : 15443.960ms
+selectionSort     : 1077.694ms
+insertionSort     : 3996.981ms
+shellSort         : 114.666ms
+mergeSortTopDown  : 101.943ms
+mergeSortBottomUp : 1783.028ms
+quickSortBasic    : 710.236ms
 
 Ordered array test (optimistic)
-nativeSort        : 291.216ms
-bubbleSort        : 27.814ms
-selectionSort     : 1177.224ms
-insertionSort     : 18.157ms
-shellSort         : 35.576ms
-mergeSortTopDown  : 82.511ms
-mergeSortBottomUp : 1653.728ms
-quickSortBasic    : 13095.760ms
+nativeSort        : 311.655ms
+bubbleSort        : 31.011ms
+selectionSort     : 1262.124ms
+insertionSort     : 19.374ms
+shellSort         : 39.448ms
+mergeSortTopDown  : 96.231ms
+mergeSortBottomUp : 2030.329ms
+quickSortBasic    : 13420.903ms
 
 Reversed array test (pesimistic)
-nativeSort        : 310.782ms
-bubbleSort        : 15444.034ms
-selectionSort     : 1165.121ms
-insertionSort     : 8003.294ms
-shellSort         : 43.399ms
-mergeSortTopDown  : 80.866ms
-mergeSortBottomUp : 1636.443ms
-quickSortBasic    : 12351.613ms
+nativeSort        : 295.772ms
+bubbleSort        : 16197.583ms
+selectionSort     : 1180.940ms
+insertionSort     : 8219.420ms
+shellSort         : 48.845ms
+mergeSortTopDown  : 85.151ms
+mergeSortBottomUp : 1764.871ms
+quickSortBasic    : 13223.443ms
 
-Stale array test (the same value)
-nativeSort        : 36.407ms
-bubbleSort        : 25.876ms
-selectionSort     : 1173.548ms
-insertionSort     : 14.039ms
-shellSort         : 32.262ms
-mergeSortTopDown  : 81.303ms
-mergeSortBottomUp : 1684.816ms
-quickSortBasic    : 12534.264ms
+Number->String array test (pesimistic)
+nativeSort        : 27.328ms
+bubbleSort        : 26.160ms
+selectionSort     : 1234.431ms
+insertionSort     : 13.868ms
+shellSort         : 32.730ms
+mergeSortTopDown  : 87.298ms
+mergeSortBottomUp : 1785.494ms
+quickSortBasic    : 12592.765ms
+
+Array of random non-repeating numbers converted to strings
+nativeSort        : 550.326ms
+bubbleSort        : 35831.575ms
+selectionSort     : 7316.510ms
+insertionSort     : 10679.653ms
+shellSort         : 411.332ms
+mergeSortTopDown  : 128.057ms
+mergeSortBottomUp : 1955.819ms
+quickSortBasic    : 1117.293ms
+
 ```
 
 ## Credits
