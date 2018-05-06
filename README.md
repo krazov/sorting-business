@@ -73,3 +73,4 @@ All the sorting algorithms were taken from [“Sorting algorithms in JavaScript,
 
 * Array with repeating numbers
 * Array with words
+* Algorithms accepting functions

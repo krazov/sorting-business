@@ -24,15 +24,14 @@ const testCases = [
         generator: generateReversed,
     },
     {
-        messages: ['', 'Number->String array test (pesimistic)'],
+        messages: ['', 'Arrays of repeating number 1 (stale)'],
         generator: generateStale,
     },
     {
-        messages: ['', 'Array of random non-repeating numbers converted to strings'],
+        messages: ['', 'Arrays of random non-repeating numbers converted to strings'],
         generator: generateStrings,
     },
 ];
 
 // and run
 forEach(testCases, singleTest(sorters));
-//testCases.forEach(compose(suiteRunnerFn, sorters.map(fnToObject(paddedNames))));
